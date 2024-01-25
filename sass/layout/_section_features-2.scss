@@ -11,6 +11,7 @@
     justify-content: space-evenly;
     transform: skewY(-8deg);
     @include respond(tab-port){
+      margin-top: -60rem;
       width: 100%;
    flex-direction: row;
     }

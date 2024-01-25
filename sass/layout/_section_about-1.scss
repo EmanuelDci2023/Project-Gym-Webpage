@@ -7,9 +7,11 @@
       background-color: $color-grey-light-1;
       padding-top: 30rem;
       transition: all .8s ease;
+      padding-bottom: 20rem;
 
       @include respond(tab-land) {
-        min-height: 110vh;
+       min-height: 130vh;
+       padding-bottom: 30rem;
     
     }
 
@@ -18,15 +20,18 @@
         justify-content: start;
         align-items: center;
        flex-wrap: wrap;
+       min-height: 110vh;
     }
       @include respond(phone){
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-height: 100vh;
     }
     @include respond(big-desktop) {
       min-height: 150vh;
       margin-top: -30rem;
+      padding-bottom: 50rem;
       
     }
 

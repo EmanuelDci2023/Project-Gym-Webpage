@@ -4,15 +4,23 @@ perspective: 150rem;
 position: relative;
 height: 50rem;
 width: 30rem;
-border: 2px solid red;
+
 @include respond(tab-port){
 margin-top: 10rem;
-
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 60rem;
 }
-@include respond(big-desktop){
-    width: 40rem;
-    }
 
+@include respond(phone){
+  width: 40rem;
+}
+
+@include respond(big-desktop){
+    width: 50rem;
+  }
 
 &__side {
     position: absolute;
@@ -29,11 +37,11 @@ margin-top: 10rem;
 
     &--front  {
         background-color: $color-white;
-    
+
     }
 
     &--back {
-        
+
         // we  will rotate 180deg on the Y axis because this is his default position at the begining and we want to rotate it to the back
         transform: rotateY(180deg);
 
@@ -147,5 +155,3 @@ box-decoration-break: clone;
             font-weight: 100;
         }
 }
-
-   
