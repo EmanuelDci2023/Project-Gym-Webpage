@@ -212,11 +212,17 @@ body .heading-secondary:hover {
   perspective: 150rem;
   position: relative;
   height: 50rem;
-  min-width: 30rem;
+  width: 30rem;
+  border: 2px solid red;
 }
 @media (max-width: 56.25em) {
   .card {
     margin-top: 10rem;
+  }
+}
+@media (min-width: 112.5em) {
+  .card {
+    width: 40rem;
   }
 }
 .card__side {
@@ -466,7 +472,7 @@ body .heading-secondary:hover {
   position: absolute;
   right: 22%;
   top: 23%;
-  max-width: 40rem;
+  width: 40rem;
 }
 @media (max-width: 56.25em) {
   .section-about .col2 .photo-p1 {
@@ -481,6 +487,11 @@ body .heading-secondary:hover {
     right: 25%;
   }
 }
+@media (min-width: 112.5em) {
+  .section-about .col2 .photo-p1 {
+    width: 60rem;
+  }
+}
 .section-about .col2 .photo-p1:hover {
   transform: scale(1.2) translateY(-0.5rem);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
@@ -491,7 +502,7 @@ body .heading-secondary:hover {
   position: absolute;
   right: 6%;
   top: 30%;
-  max-width: 40rem;
+  width: 40rem;
 }
 @media (max-width: 56.25em) {
   .section-about .col2 .photo-p2 {
@@ -507,6 +518,11 @@ body .heading-secondary:hover {
     right: 2%;
   }
 }
+@media (min-width: 112.5em) {
+  .section-about .col2 .photo-p2 {
+    width: 60rem;
+  }
+}
 .section-about .col2 .photo-p2:hover {
   transform: scale(1.2) translateY(-0.5rem);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
@@ -517,7 +533,7 @@ body .heading-secondary:hover {
   position: absolute;
   right: 33%;
   top: 42%;
-  max-width: 40rem;
+  width: 40rem;
 }
 @media (max-width: 56.25em) {
   .section-about .col2 .photo-p3 {
@@ -527,11 +543,16 @@ body .heading-secondary:hover {
     top: 20%;
   }
 }
-@media (max-width: 56.25em) and (max-width: 37em) {
+@media (max-width: 37em) {
   .section-about .col2 .photo-p3 {
     width: 50%;
     top: 17%;
     left: 8%;
+  }
+}
+@media (min-width: 112.5em) {
+  .section-about .col2 .photo-p3 {
+    width: 60rem;
   }
 }
 .section-about .col2 .photo-p3:hover {
@@ -886,7 +907,7 @@ footer .box {
   transform: translateX(1rem);
 }
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80);
+  transform: scale(150);
 }
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;

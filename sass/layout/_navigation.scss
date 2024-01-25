@@ -100,7 +100,7 @@ transform: translateX(1rem);
 //The ~ select all the siblings elements of the checkbox appearing after the checkbox
 &__checkbox:checked ~ &__background {
     // Step 5 - by clicking the checkbox we want to show the navigation background
-    transform: scale(80);
+    transform: scale(150);
 }
 &__checkbox:checked ~ &__nav {
     // Step 6 - by clicking we want to show the navigation by setting back the opacity to 1 and the width to 100%

@@ -3,13 +3,15 @@
 perspective: 150rem;
 position: relative;
 height: 50rem;
-min-width: 30rem;
-
+width: 30rem;
+border: 2px solid red;
 @include respond(tab-port){
 margin-top: 10rem;
 
 }
-
+@include respond(big-desktop){
+    width: 40rem;
+    }
 
 
 &__side {
