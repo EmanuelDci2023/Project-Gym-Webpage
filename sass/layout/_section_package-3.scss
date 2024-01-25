@@ -15,16 +15,14 @@ display: flex;
         position: relative;
         margin-top: -26rem;
         padding-top: 20rem;
-   
-    width: 100%;
-  display: flex;
-    justify-content: space-evenly; 
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly; 
 
 
     @include respond(tab-port){
         flex-direction: column;
         width: 70%;
-        
         }
         @include respond(phone){
             width: 90%;
@@ -41,7 +39,6 @@ display: flex;
         @include respond(tab-port){
             font-size: 4rem;
             font-weight: 900;
-           
             width: 100%;
             text-align: center;
        
@@ -51,7 +48,6 @@ display: flex;
             font-weight: 900;
             width: 100%;
             text-align: center;
-
         }
         
     }

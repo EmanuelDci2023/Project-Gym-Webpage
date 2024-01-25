@@ -15,7 +15,6 @@
    flex-direction: row;
     }
     @include respond(big-desktop) {
-    
     }
 
     &__parent {
@@ -48,17 +47,15 @@
         width: 22rem;
         padding: 1rem 1rem;
         transition: all .4s ease;
-   border-radius: 1rem;
-   margin: 0 auto;
-   @include respond(tab-port){
-    display: grid;
-    grid-template-columns: 1fr 2fr 5fr;
-    gap: 1rem;
-    width: 80%;
-    height: 90%;
-    overflow: hidden;
- 
-    
+        border-radius: 1rem;
+        margin: 0 auto;
+        @include respond(tab-port){
+        display: grid;
+        grid-template-columns: 1fr 2fr 5fr;
+        gap: 1rem;
+        width: 80%;
+        height: 90%;
+        overflow: hidden;
   }
    
              &:hover {
